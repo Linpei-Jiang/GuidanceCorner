@@ -1,1 +1,30 @@
 header {position: fixed;}
+
+.PhysicalEffect {padding-top: 200px;}
+.PhysicalEffect, .MentalEffect, .TeensEffect, .LongEffect {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 40vh;
+    gap: 50px;
+}
+
+.MentalEffect, .TeensEffect, .LongEffect {margin: 100px 0;}
+
+.MentalEffect .effectLeft, .LongEffect .effectLeft {order: 2;}
+
+.effectLeft, .effectRight {
+    width: 45%;
+    height: 100%;
+}
+
+.PhysicalEffect .effectLeft, .TeensEffect .effectLeft, .MentalEffect .effectRight, .LongEffect .effectRight {display: flex; flex-direction: column; align-items: end; text-align: end;}
+
+.leftImg {
+    width: 80%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
