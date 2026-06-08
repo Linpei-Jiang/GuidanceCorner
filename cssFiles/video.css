@@ -1,1 +1,71 @@
 header {position: fixed;}
+
+#first {
+    padding-top: 150px;
+}
+
+.resource-section {
+    padding: 1.75rem 1.75rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.resource-section h2 {
+    font-size: 1.2rem;
+    margin: 0 0 1rem;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.resource-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 1rem;
+}
+
+.resource-list li {
+    padding: 0.75rem 0.75rem 0.9rem;
+    border-radius: 10px;
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+}
+
+.resource-list h3 {
+    margin: 0 0 0.35rem;
+    font-size: 1rem;
+}
+
+.resource-list p {
+    margin: 0 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.resource-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    font-size: 0.88rem;
+    text-decoration: none;
+    padding: 0.25rem 0.7rem;
+    color: black;
+    border: 1px solid rgba(59, 108, 246, 0.25);
+    transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.resource-list a::before {
+    content: "↗";
+    font-size: 0.8rem;
+}
+
+.resource-list a:hover {
+    background: var(--mainColor);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(15, 23, 42, 0.12);
+}
+
+@media (min-width: 720px) {
+    .resource-list {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
