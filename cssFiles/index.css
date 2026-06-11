@@ -127,6 +127,17 @@ body.header-fixed .definitionOfAlcohol {margin-top: 100px;}
     margin: 100px 0;
 }
 
+/*TRANSITION*/
+.definitionOfAlcohol {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.definitionOfAlcohol.show {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 
 

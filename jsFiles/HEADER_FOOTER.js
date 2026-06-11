@@ -11,3 +11,15 @@ loadComponent("#header", "HEADER_FOOTER/HEADER.html", () => {
 });
 
 loadComponent("#footer", "HEADER_FOOTER/FOOTER.html");
+
+const section = document.querySelector('.definitionOfAlcohol');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            section.classList.add('show');
+        }
+    });
+});
+
+observer.observe(section);
